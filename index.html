@@ -4,9 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#1F2428">
+  <meta name="color-scheme" content="dark light">
   <title>ООО «Дорожник» — дорожные и тоннельные работы, производство асфальта в Уфе</title>
   <meta name="description" content="Строительство и ремонт дорог, содержание трасс, тоннельные работы, продажа асфальта и бетона. Собственная база в Уфе, 100+ единиц техники, опыт с 1999 года.">
   <link rel="canonical" href="https://dorozhnik-ufa.ru/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ООО «Дорожник» — дорожные работы и асфальт в Уфе">
+  <meta property="og:description" content="Полный цикл: от материала до сдачи объекта. С 1999 года. Своя техника и производство.">
+  <meta property="og:url" content="https://dorozhnik-ufa.ru/">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="ООО «Дорожник»">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="/assets/css/styles.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -19,13 +28,16 @@
     "name": "ООО «Дорожник»",
     "url": "https://dorozhnik-ufa.ru/",
     "telephone": "+7 (347) 000-00-00",
+    "email": "info@dorozhnik-ufa.ru",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Уфа",
       "addressRegion": "Республика Башкортостан",
-      "streetAddress": "ул. Промышленная, 1"
+      "streetAddress": "ул. Промышленная, 1",
+      "addressCountry": "RU"
     },
-    "foundingDate": "1999"
+    "foundingDate": "1999",
+    "areaServed": "Республика Башкортостан"
   }
   </script>
 </head>
@@ -42,10 +54,11 @@
 
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="#" class="logo" id="logoLink" aria-label="Дорожник — на главную">
+      <a href="/" class="logo" id="logoLink" aria-label="Дорожник — на главную">
         <span class="logo__mark">Д</span>
         <span class="logo__text">Дорожник</span>
       </a>
+
       <nav class="nav" aria-label="Основная навигация">
         <a href="#services">Услуги</a>
         <a href="#advantages">Преимущества</a>
@@ -54,12 +67,29 @@
         <a href="#faq">Вопросы</a>
         <a href="#contacts">Контакты</a>
       </nav>
+
       <div class="header__actions">
         <a href="tel:+73470000000" class="btn btn--ghost btn--small">Позвонить</a>
-        <a href="#lead" class="btn btn--primary btn--small">Оставить заявку</a>
+        <a href="#lead" class="btn btn--primary btn--small">Заявка</a>
+        <button type="button" class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
+    <a href="#services">Услуги</a>
+    <a href="#advantages">Преимущества</a>
+    <a href="#process">Технология</a>
+    <a href="#objects">Объекты</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#contacts">Контакты</a>
+    <div class="mobile-nav__cta">
+      <a href="tel:+73470000000" class="btn btn--ghost">Позвонить</a>
+      <a href="#lead" class="btn btn--primary">Оставить заявку</a>
+    </div>
+  </nav>
 
   <main id="main">
     <section class="hero" id="hero">
@@ -87,7 +117,14 @@
         </div>
         <div class="hero__media">
           <div class="hero__company-name"><span>ООО «Дорожник»</span></div>
-          <img src="/assets/img/hero-1200.jpg" alt="Дорожная техника ООО «Дорожник» на объекте" width="1200" height="900" fetchpriority="high" decoding="async">
+          <img
+            src="/assets/img/hero-1200.jpg"
+            alt="Дорожная техника ООО «Дорожник» на объекте"
+            width="1200"
+            height="900"
+            fetchpriority="high"
+            decoding="async"
+          >
         </div>
       </div>
     </section>
@@ -168,52 +205,52 @@
 
     <section class="road-showcase reveal" id="process">
       <div class="container">
-        <div class="section__head" style="text-align: center; margin: 0 auto 40px;">
+        <div class="section__head" style="text-align:center;margin:0 auto 36px">
           <h2>Технология строительства</h2>
-          <p>Каждый слой выполняет свою функцию. От надежного основания до идеального асфальта.</p>
+          <p>Каждый слой выполняет свою функцию — от надёжного основания до финишного покрытия.</p>
         </div>
 
         <div class="road-slider" id="roadSlider">
           <div class="road-slider__images">
-            <img src="/assets/img/road/osnovanie.jpg" class="road-slider__img active" alt="Подготовка основания">
-            <img src="/assets/img/road/pgs.jpg" class="road-slider__img" alt="Рассыпка ПГС">
-            <img src="/assets/img/road/sheben.jpg" class="road-slider__img" alt="Укладка щебня">
-            <img src="/assets/img/road/bitum.jpg" class="road-slider__img" alt="Розлив битума">
-            <img src="/assets/img/road/asphalt.jpg" class="road-slider__img" alt="Укладка асфальта">
+            <img src="/assets/img/road/osnovanie.jpg" class="road-slider__img active" alt="Подготовка основания" width="1280" height="800" loading="lazy" decoding="async">
+            <img src="/assets/img/road/pgs.jpg" class="road-slider__img" alt="Рассыпка ПГС" width="1280" height="800" loading="lazy" decoding="async">
+            <img src="/assets/img/road/sheben.jpg" class="road-slider__img" alt="Укладка щебня" width="1280" height="800" loading="lazy" decoding="async">
+            <img src="/assets/img/road/bitum.jpg" class="road-slider__img" alt="Розлив битума" width="1280" height="800" loading="lazy" decoding="async">
+            <img src="/assets/img/road/asphalt.jpg" class="road-slider__img" alt="Укладка асфальта" width="1280" height="800" loading="lazy" decoding="async">
           </div>
 
           <div class="road-slider__captions">
             <div class="road-slider__caption active">
               <span>01</span>
               <h3>Подготовка основания</h3>
-              <p>Снимаем грунт, выравниваем и уплотняем основание (корыто) тяжелыми катками.</p>
+              <p>Снимаем грунт, выравниваем и уплотняем основание тяжёлыми катками.</p>
             </div>
             <div class="road-slider__caption">
               <span>02</span>
               <h3>Рассыпка ПГС</h3>
-              <p>Засыпаем песчано-гравийную смесь. Она равномерно распределяет нагрузку и отводит влагу.</p>
+              <p>Песчано-гравийная смесь равномерно распределяет нагрузку и отводит влагу.</p>
             </div>
             <div class="road-slider__caption">
               <span>03</span>
               <h3>Укладка щебня</h3>
-              <p>Используем метод «заклинки» для создания монолитного и жесткого несущего слоя.</p>
+              <p>Метод «заклинки» создаёт монолитный и жёсткий несущий слой.</p>
             </div>
             <div class="road-slider__caption">
               <span>04</span>
               <h3>Розлив битума</h3>
-              <p>Обрабатываем основание эмульсией для идеального сцепления асфальта и обеспыливания.</p>
+              <p>Эмульсия обеспечивает сцепление асфальта с основанием и обеспыливание.</p>
             </div>
             <div class="road-slider__caption">
               <span>05</span>
               <h3>Укладка асфальта</h3>
-              <p>Укладываем горячую смесь и уплотняем катками. Финишное покрытие готово к эксплуатации.</p>
+              <p>Горячая смесь и уплотнение катками — покрытие готово к эксплуатации.</p>
             </div>
           </div>
 
-          <button class="road-slider__btn road-slider__btn--prev" aria-label="Предыдущий этап">
+          <button type="button" class="road-slider__btn road-slider__btn--prev" aria-label="Предыдущий этап">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
           </button>
-          <button class="road-slider__btn road-slider__btn--next" aria-label="Следующий этап">
+          <button type="button" class="road-slider__btn road-slider__btn--next" aria-label="Следующий этап">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
           </button>
         </div>
@@ -222,19 +259,41 @@
 
     <section class="section reveal" id="objects">
       <div class="container">
-        <div class="section__head"><h2>Объекты и направления</h2><p>Показываем типы работ. По запросу — конкретные объекты.</p></div>
+        <div class="section__head">
+          <h2>Объекты и направления</h2>
+          <p>Типы работ. По запросу покажем конкретные объекты.</p>
+        </div>
         <div class="objects">
-          <div class="object-card"><div class="object-card__media object-card__media--1"></div><h3>Содержание федеральной трассы</h3><p>Круглогодичное обслуживание, зимняя расчистка, ямочный ремонт.</p></div>
-          <div class="object-card"><div class="object-card__media object-card__media--2"></div><h3>Асфальтирование промплощадки</h3><p>Подготовка основания, укладка, уплотнение, разметка.</p></div>
-          <div class="object-card"><div class="object-card__media object-card__media--3"></div><h3>Поставка асфальтобетона</h3><p>Собственное производство, доставка, лабораторный контроль.</p></div>
-          <div class="object-card"><div class="object-card__media object-card__media--4"></div><h3>Тоннельные работы</h3><p>Проходка, крепи, водопонижение, несущие конструкции.</p></div>
+          <div class="object-card">
+            <div class="object-card__media object-card__media--1"></div>
+            <h3>Содержание федеральной трассы</h3>
+            <p>Круглогодичное обслуживание, зимняя расчистка, ямочный ремонт.</p>
+          </div>
+          <div class="object-card">
+            <div class="object-card__media object-card__media--2"></div>
+            <h3>Асфальтирование промплощадки</h3>
+            <p>Подготовка основания, укладка, уплотнение, разметка.</p>
+          </div>
+          <div class="object-card">
+            <div class="object-card__media object-card__media--3"></div>
+            <h3>Поставка асфальтобетона</h3>
+            <p>Собственное производство, доставка, лабораторный контроль.</p>
+          </div>
+          <div class="object-card">
+            <div class="object-card__media object-card__media--4"></div>
+            <h3>Тоннельные работы</h3>
+            <p>Проходка, крепи, водопонижение, несущие конструкции.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section section--muted reveal" id="faq">
       <div class="container">
-        <div class="section__head"><h2>Частые вопросы</h2><p>Если чего-то нет — напишите, ответим в рабочее время.</p></div>
+        <div class="section__head">
+          <h2>Частые вопросы</h2>
+          <p>Не нашли ответ — напишите или позвоните, ответим в рабочее время.</p>
+        </div>
         <div class="faq">
           <details>
             <summary>Работаете ли по договору?</summary>
@@ -274,22 +333,22 @@
         <form class="lead__form" id="leadForm" novalidate>
           <div class="field">
             <label for="name">Имя <span class="req">*</span></label>
-            <input id="name" name="name" type="text" autocomplete="name" required maxlength="100">
+            <input id="name" name="name" type="text" autocomplete="name" required maxlength="100" enterkeyhint="next">
             <span class="field__error" data-error-for="name"></span>
           </div>
           <div class="field">
             <label for="phone">Телефон <span class="req">*</span></label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20" placeholder="+7 (___) ___-__-__">
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20" placeholder="+7 (___) ___-__-__" enterkeyhint="next">
             <span class="field__error" data-error-for="phone"></span>
           </div>
           <div class="field">
             <label for="message">Что нужно сделать?</label>
-            <textarea id="message" name="message" rows="3" placeholder="Например: асфальтирование площадки 2000 м²"></textarea>
+            <textarea id="message" name="message" rows="3" placeholder="Например: асфальтирование площадки 2000 м²" enterkeyhint="send"></textarea>
           </div>
-          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
           <div class="consent">
             <input type="checkbox" id="consentPd" name="consent" value="1" required>
-            <label for="consentPd">Я ознакомлен(а) с <a href="/privacy/">Политикой обработки ПДн</a> и даю <a href="/consent/">согласие на обработку персональных данных</a>. <span class="req">*</span></label>
+            <label for="consentPd">Я ознакомлен(а) с <a href="/privacy/" target="_blank" rel="noopener">Политикой обработки ПДн</a> и даю <a href="/consent/" target="_blank" rel="noopener">согласие на обработку персональных данных</a>. <span class="req">*</span></label>
           </div>
           <div class="consent">
             <input type="checkbox" id="consentMarketing" name="marketing" value="1">
@@ -305,37 +364,66 @@
   <footer class="footer" id="contacts">
     <div class="container footer__grid">
       <div class="footer__col">
-        <a href="#" class="logo logo--footer"><span class="logo__mark">Д</span><span class="logo__text">Дорожник</span></a>
+        <a href="/" class="logo logo--footer"><span class="logo__mark">Д</span><span class="logo__text">Дорожник</span></a>
         <p class="footer__desc">Строительство, ремонт и содержание дорог. Производство асфальта, бетона и инертных материалов в Уфе.</p>
         <p class="footer__req">ООО «Дорожник» · ИНН 0000000000 · ОГРН 0000000000000<br>г. Уфа, ул. Промышленная, 1</p>
       </div>
-      <div class="footer__col"><h4>Разделы</h4><ul><li><a href="#services">Услуги</a></li><li><a href="#advantages">Преимущества</a></li><li><a href="#objects">Объекты</a></li><li><a href="#faq">Вопросы</a></li></ul></div>
-      <div class="footer__col"><h4>Контакты</h4><ul><li><a href="tel:+73470000000">+7 (347) 000-00-00</a></li><li><a href="mailto:info@dorozhnik-ufa.ru">info@dorozhnik-ufa.ru</a></li><li><a href="https://t.me/dorozhnik_ufa" target="_blank" rel="noopener noreferrer">Telegram</a></li><li><a href="https://wa.me/73470000000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li></ul></div>
-      <div class="footer__col"><h4>Документы</h4><ul><li><a href="/privacy/">Политика ПДн</a></li><li><a href="/consent/">Согласие</a></li><li><a href="/cookie/">Cookie</a></li><li><button type="button" id="cookieSettings" class="link-btn">Настройки cookie</button></li></ul></div>
+      <div class="footer__col">
+        <h4>Разделы</h4>
+        <ul>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#objects">Объекты</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+73470000000">+7 (347) 000-00-00</a></li>
+          <li><a href="mailto:info@dorozhnik-ufa.ru">info@dorozhnik-ufa.ru</a></li>
+          <li><a href="https://t.me/dorozhnik_ufa" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          <li><a href="https://wa.me/73470000000" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Документы</h4>
+        <ul>
+          <li><a href="/privacy/">Политика ПДн</a></li>
+          <li><a href="/consent/">Согласие</a></li>
+          <li><a href="/cookie/">Cookie</a></li>
+          <li><button type="button" id="cookieSettings" class="link-btn">Настройки cookie</button></li>
+        </ul>
+      </div>
     </div>
-    <div class="container footer__bottom"><p>© 2026 ООО «Дорожник». Все права защищены.</p></div>
+    <div class="container footer__bottom">
+      <p>© 2026 ООО «Дорожник». Все права защищены.</p>
+    </div>
   </footer>
 
-  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Использование cookie" hidden>
-    <p>Мы используем cookie для работы сайта и аналитики. <a href="/cookie/">Политика cookie</a> · <a href="/privacy/">Политика ПДн</a></p>
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Использование файлов cookie" hidden>
+    <p>
+      Мы используем cookie для работы сайта и аналитики.
+      <a href="/cookie/" target="_blank" rel="noopener">Политика cookie</a> ·
+      <a href="/privacy/" target="_blank" rel="noopener">Политика ПДн</a>
+    </p>
     <div class="cookie-banner__actions">
-      <button type="button" class="btn btn--ghost btn--small" id="btnCookieSettings">Настроить</button>
       <button type="button" class="btn btn--ghost btn--small" data-cookie="necessary">Только необходимые</button>
+      <button type="button" class="btn btn--ghost btn--small" id="btnCookieSettings">Настроить</button>
       <button type="button" class="btn btn--primary btn--small" data-cookie="all">Принять все</button>
     </div>
   </div>
 
-  <dialog class="cookie-modal" id="cookieModal">
+  <dialog class="cookie-modal" id="cookieModal" aria-labelledby="cookieModalTitle">
     <form method="dialog">
-      <h3>Настройки Cookie</h3>
-      <p>Выберите, какие категории cookie вы разрешаете.</p>
+      <h3 id="cookieModalTitle">Настройки cookie</h3>
       <label class="cookie-modal__label">
         <input type="checkbox" checked disabled>
         <span><b>Необходимые</b> (всегда включены) — нужны для работы сайта.</span>
       </label>
       <label class="cookie-modal__label">
         <input type="checkbox" id="cookieAnalytics" checked>
-        <span><b>Аналитические</b> — помогают нам понять, как вы используете сайт.</span>
+        <span><b>Аналитические</b> — помогают понять, как вы используете сайт.</span>
       </label>
       <div class="cookie-modal__actions">
         <button type="button" class="btn btn--ghost" onclick="document.getElementById('cookieModal').close()">Отмена</button>
@@ -345,7 +433,7 @@
   </dialog>
 
   <div class="ai-chat-wrapper">
-    <button class="ai-chat-toggle" id="aiChatToggle" aria-label="Открыть ИИ-помощника">
+    <button type="button" class="ai-chat-toggle" id="aiChatToggle" aria-label="Открыть помощника">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M8 10h.01M12 10h.01M16 10h.01"></path></svg>
       <span class="ai-chat-badge">ИИ</span>
     </button>
@@ -354,21 +442,19 @@
         <div class="ai-chat-header-info">
           <div class="ai-chat-avatar">Д</div>
           <div>
-            <strong>ИИ-Помощник</strong>
-            <span>Дорожник</span>
+            <strong>Помощник</strong>
+            <span>Дорожник · онлайн</span>
           </div>
         </div>
-        <button class="ai-chat-close" id="aiChatClose" aria-label="Закрыть чат">
+        <button type="button" class="ai-chat-close" id="aiChatClose" aria-label="Закрыть чат">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"></path></svg>
         </button>
       </div>
       <div class="ai-chat-messages" id="aiChatMessages">
-        <div class="ai-message ai-message--bot">
-          Здравствуйте! Я ИИ-помощник компании «Дорожник». Могу ответить на вопросы о наших услугах, ценах, сроках или даже посчитать что-нибудь. Чем помочь?
-        </div>
+        <div class="ai-message ai-message--bot">Здравствуйте! Я помощник «Дорожник». Спросите про услуги, цены, сроки или попросите посчитать — например «12*45».</div>
       </div>
       <form class="ai-chat-input-area" id="aiChatForm">
-        <input type="text" id="aiChatInput" placeholder="Задайте вопрос..." autocomplete="off">
+        <input type="text" id="aiChatInput" placeholder="Задайте вопрос…" autocomplete="off" enterkeyhint="send">
         <button type="submit" aria-label="Отправить">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
         </button>
