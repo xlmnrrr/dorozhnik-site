@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /tg/
 Sitemap: https://dorozhnik-ufa.ru/sitemap.xml
 Host: https://dorozhnik-ufa.ru
