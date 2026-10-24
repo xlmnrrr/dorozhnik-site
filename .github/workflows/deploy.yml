@@ -13,11 +13,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Upload to Yandex Object Storage
-        uses: paulvstrashnov/yandex-s3-upload-action@main
-        with:
-          accessKeyId: ${{ secrets.YC_ACCESS_KEY_ID }}
-          secretAccessKey: ${{ secrets.YC_SECRET_ACCESS_KEY }}
-          bucket: ${{ secrets.YC_BUCKET_NAME }}
-          localPath: '.'
-          remotePath: '/'
-          clearBucket: true
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.YC_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ru-central1
+        run: |
+          aws s3 sync . s3://${{ secrets.YC_BUCKET_NAME }} --endpoint-url https://storage.yandexcloud.net --exclude ".git/*" --exclude ".github/*" --exclude "README.md" --exclude ".gitignore" --delete
