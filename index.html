@@ -33,7 +33,6 @@
 
   <a class="skip-link" href="#main">Перейти к содержимому</a>
 
-  <!-- Инженерная фишка: Дороги по бокам -->
   <div class="road-timeline road-timeline--left" aria-hidden="true">
     <div class="road-timeline__image" id="roadImageLeft"></div>
   </div>
@@ -63,7 +62,6 @@
   </header>
 
   <main id="main">
-    <!-- HERO -->
     <section class="hero" id="hero">
       <div class="container hero__grid">
         <div class="hero__content">
@@ -94,7 +92,6 @@
       </div>
     </section>
 
-    <!-- УСЛУГИ -->
     <section class="section reveal" id="services">
       <div class="container">
         <div class="section__head">
@@ -153,7 +150,6 @@
       </div>
     </section>
 
-    <!-- ПРЕИМУЩЕСТВА -->
     <section class="section section--dark reveal" id="advantages">
       <div class="container">
         <div class="section__head">
@@ -170,7 +166,6 @@
       </div>
     </section>
 
-    <!-- ТЕХНОЛОГИЯ СТРОИТЕЛЬСТВА (СЛАЙДЕР) -->
     <section class="road-showcase reveal" id="process">
       <div class="container">
         <div class="section__head" style="text-align: center; margin: 0 auto 40px;">
@@ -179,7 +174,6 @@
         </div>
 
         <div class="road-slider" id="roadSlider">
-          <!-- Картинки -->
           <div class="road-slider__images">
             <img src="/assets/img/road/osnovanie.jpg" class="road-slider__img active" alt="Подготовка основания">
             <img src="/assets/img/road/pgs.jpg" class="road-slider__img" alt="Рассыпка ПГС">
@@ -188,7 +182,6 @@
             <img src="/assets/img/road/asphalt.jpg" class="road-slider__img" alt="Укладка асфальта">
           </div>
 
-          <!-- Текст -->
           <div class="road-slider__captions">
             <div class="road-slider__caption active">
               <span>01</span>
@@ -217,7 +210,6 @@
             </div>
           </div>
 
-          <!-- Кнопки -->
           <button class="road-slider__btn road-slider__btn--prev" aria-label="Предыдущий этап">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
           </button>
@@ -228,7 +220,6 @@
       </div>
     </section>
 
-    <!-- ОБЪЕКТЫ -->
     <section class="section reveal" id="objects">
       <div class="container">
         <div class="section__head"><h2>Объекты и направления</h2><p>Показываем типы работ. По запросу — конкретные объекты.</p></div>
@@ -241,7 +232,6 @@
       </div>
     </section>
 
-    <!-- FAQ -->
     <section class="section section--muted reveal" id="faq">
       <div class="container">
         <div class="section__head"><h2>Частые вопросы</h2><p>Если чего-то нет — напишите, ответим в рабочее время.</p></div>
@@ -274,7 +264,6 @@
       </div>
     </section>
 
-    <!-- ФОРМА -->
     <section class="section reveal" id="lead">
       <div class="container lead">
         <div class="lead__text">
@@ -327,7 +316,6 @@
     <div class="container footer__bottom"><p>© 2026 ООО «Дорожник». Все права защищены.</p></div>
   </footer>
 
-  <!-- Cookie Banner -->
   <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Использование cookie" hidden>
     <p>Мы используем cookie для работы сайта и аналитики. <a href="/cookie/">Политика cookie</a> · <a href="/privacy/">Политика ПДн</a></p>
     <div class="cookie-banner__actions">
@@ -337,7 +325,6 @@
     </div>
   </div>
 
-  <!-- Модальное окно Cookie -->
   <dialog class="cookie-modal" id="cookieModal">
     <form method="dialog">
       <h3>Настройки Cookie</h3>
@@ -357,7 +344,6 @@
     </form>
   </dialog>
 
-  <!-- ИИ-Бот виджет -->
   <div class="ai-chat-wrapper">
     <button class="ai-chat-toggle" id="aiChatToggle" aria-label="Открыть ИИ-помощника">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M8 10h.01M12 10h.01M16 10h.01"></path></svg>
@@ -378,7 +364,7 @@
       </div>
       <div class="ai-chat-messages" id="aiChatMessages">
         <div class="ai-message ai-message--bot">
-          Здравствуйте! Я ИИ-помощник компании «Дорожник». Чем могу помочь? Можете спросить про услуги, цены или сроки.
+          Здравствуйте! Я ИИ-помощник компании «Дорожник». Могу ответить на вопросы о наших услугах, ценах, сроках или даже посчитать что-нибудь. Чем помочь?
         </div>
       </div>
       <form class="ai-chat-input-area" id="aiChatForm">
@@ -391,5 +377,6 @@
   </div>
 
   <script src="/assets/js/app.js" type="module"></script>
+  <script src="/register-sw.js"></script>
 </body>
 </html>
