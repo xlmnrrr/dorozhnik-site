@@ -1,0 +1,18 @@
+{
+  "name": "ООО «Дорожник»",
+  "short_name": "Дорожник",
+  "description": "Дорожные и тоннельные работы, производство асфальта и бетона в Уфе.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#1F2428",
+  "background_color": "#F2F0EB",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+name: Deploy to Yandex Object Storage
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Upload to Yandex Object Storage
+        uses: paulvstrashnov/yandex-s3-upload-action@main
+        with:
+          accessKeyId: ${{ secrets.YC_ACCESS_KEY_ID }}
+          secretAccessKey: ${{ secrets.YC_SECRET_ACCESS_KEY }}
+          bucket: ${{ secrets.YC_BUCKET_NAME }}
+          localPath: '.'
+          remotePath: '/'
+          clearBucket: true
